@@ -84,7 +84,7 @@ with st.expander(TRANSLATIONS[inst_lang]["writing_tips"]):
     st.markdown("- 💡 Use sidebar to choose instruction & writing languages.")
     if level == "A1":
         st.markdown("- 📝 Simple present tense; short, clear sentences.")
-    elif level == "A2":
+        elif level == "A2":
         st.markdown("- 🔗 Use connectors (weil, denn).
 - Include time expressions & polite forms.")
     elif level == "B1":
