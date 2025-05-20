@@ -7,11 +7,18 @@ st.set_page_config(page_title="MultiLang Checker", layout="wide")
 # Hide Streamlit footer branding
 st.markdown("<style>footer {visibility: hidden;}</style>", unsafe_allow_html=True)
 
-# -- OpenAI API Key --
-api_key = st.secrets.get("general", {}).get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+# -- Retrieve OpenAI API Key --
+# Prefer environment variable, fallback to Streamlit secrets if available
+api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
-    st.error("❌ OpenAI API key not found. Add it to secrets.toml under [general] or set as environment variable.")
+    try:
+        api_key = st.secrets["general"]["OPENAI_API_KEY"]
+    except Exception:
+        api_key = None
+if not api_key:
+    st.error("❌ OpenAI API key not found. Set OPENAI_API_KEY as an environment variable or add to secrets.toml under [general].")
     st.stop()
+
 openai.api_key = api_key
 client = openai.OpenAI(api_key=api_key)
 
@@ -29,12 +36,8 @@ DEFAULT_CONNECTORS = {
 # -- Translation strings for UI --
 TRANSLATIONS = {
     lang: {
-        "select_language": {
-            "English":"Select language","German":"Sprache wählen","French":"Choisir la langue","Spanish":"Seleccione idioma","Italian":"Seleziona lingua","Portuguese":"Selecionar idioma"
-        }[lang],
-        "ui_language": {
-            "English":"Instruction language","German":"Sprache der Anleitung","French":"Langue d'instruction","Spanish":"Idioma de instrucción","Italian":"Lingua di istruzione","Portuguese":"Idioma de instrução"
-        }[lang],
+        "select_language": {"English":"Select language","German":"Sprache wählen","French":"Choisir la langue","Spanish":"Seleccione idioma","Italian":"Seleziona lingua","Portuguese":"Selecionar idioma"}[lang],
+        "ui_language": {"English":"Instruction language","German":"Sprache der Anleitung","French":"Langue d'instruction","Spanish":"Idioma de instrucción","Italian":"Lingua di istruzione","Portuguese":"Idioma de instrução"}[lang],
         "level": {"English":"Select your level","German":"Wählen Sie Ihr Niveau","French":"Sélectionnez votre niveau","Spanish":"Seleccione su nivel","Italian":"Seleziona il tuo livello","Portuguese":"Selecione seu nível"}[lang],
         "task_type": {"English":"Select task type","German":"Aufgabentyp wählen","French":"Sélectionnez le type de tâche","Spanish":"Seleccione tipo de tarea","Italian":"Seleziona tipo di compito","Portuguese":"Selecione o tipo de tarefa"}[lang],
         "writing_tips": {"English":"Writing Tips and Advice","German":"Schreibtipps und Ratschläge","French":"Conseils d'écriture","Spanish":"Consejos de escritura","Italian":"Suggerimenti di scrittura","Portuguese":"Dicas de escrita"}[lang],
@@ -72,9 +75,7 @@ def annotate_text_with_errors(text: str, gpt_results: list[str]) -> str:
     return ann.replace("\n", "  \n")
 
 # -- Main UI --
-# Instruction language selection
 inst_lang = st.sidebar.selectbox("", LANGUAGES, format_func=lambda x: TRANSLATIONS[x]["ui_language"])
-# Text language selection
 text_lang = st.selectbox(TRANSLATIONS[inst_lang]["select_language"], LANGUAGES)
 
 st.title("📝 MultiLang Checker – Learn Language Education Academy")
