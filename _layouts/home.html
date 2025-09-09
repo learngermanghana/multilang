@@ -1,0 +1,28 @@
+---
+---
+{% comment %} Home layout: hero + grid cards {% endcomment %}
+{% include head.html %}
+{% include head-custom.html %}
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Falowen Blog</h1>
+    <p>Your German conversation partner online. Tips, exam prep, and product updates from Learn Language Education Academy.</p>
+    <a class="btn" href="/about/">About the project</a>
+  </div>
+</div>
+
+<div class="post-grid">
+  {% for post in site.posts limit:12 %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</div>
+
+<style>
+.hero{background:linear-gradient(180deg,#f3f7fb,rgba(243,247,251,0));
+      border-top:6px solid #25317e; padding:36px 0 10px; margin:-10px 0 10px;}
+.hero-inner{max-width:960px;margin:0 auto;padding:0 16px;text-align:center}
+.hero h1{margin:0 0 8px 0;font-weight:900;color:#1c2440}
+.hero p{color:#475569;max-width:720px;margin:0 auto 12px}
+.post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:12px}
+</style>
