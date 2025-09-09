@@ -1,0 +1,7 @@
+title: "Falowen Blog"
+description: "Insights and resources from Learn Language Education Academy"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.falowen.app" # your custom domain
+theme: minima
+plugins:
+  - jekyll-feed
