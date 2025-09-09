@@ -11,59 +11,7 @@ layout: null
   {%- comment -%} Minima head + your custom head {%- endcomment -%}
   {%- include head.html -%}
   {%- include head-custom.html -%}
-  <style>
-    :root{
-      --brand:#25317e;
-      --bg:#f3f7fb;
-      --ink:#1c2440;
-      --muted:#64748b;
-      --card:#ffffff;
-      --ring:rgba(37,49,126,.18);
-      --line:rgba(148,163,184,.35);
-    }
-    html,body{margin:0;padding:0;background:#fff;color:#0b1022;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
-    .hero{
-      background: linear-gradient(180deg, var(--bg), rgba(243,247,251,0));
-      border-top: 6px solid var(--brand);
-      padding: 44px 0 22px;
-    }
-    .hero h1{margin:0 0 10px 0;font-size: clamp(28px, 4vw, 44px);line-height:1.1;color:var(--ink);font-weight:900}
-    .hero p{margin:0 0 16px 0;color:var(--muted);font-size: clamp(16px, 2vw, 18px)}
-    .cta{
-      display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
-      padding:12px 16px;border-radius:12px;font-weight:800;border:1px solid rgba(37,49,126,.9);
-      box-shadow:0 10px 22px var(--ring);
-    }
-    .cta:hover{filter:brightness(1.05)}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 8px}
-    .feature{
-      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px;
-      box-shadow:0 6px 14px rgba(2,6,23,.06)
-    }
-    .feature h3{margin:0 0 6px 0; font-size:18px; color:var(--ink)}
-    .feature p{margin:0;color:var(--muted);font-size:15px}
-    .section{padding: 10px 0 28px}
-    .section h2{margin:8px 0 10px 0;color:var(--ink);font-size:24px}
-    .grid{
-      display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-      gap:14px;align-items:stretch
-    }
-    .card{
-      background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;
-      box-shadow:0 6px 14px rgba(2,6,23,.06);display:flex;flex-direction:column;gap:8px
-    }
-    .card a{color:inherit;text-decoration:none}
-    .card h3{margin:0;color:var(--ink);font-size:18px}
-    .card p{margin:0;color:var(--muted);font-size:15px}
-    .meta{font-size:13px;color:#8a97ab}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-    .pill{
-      display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;
-      font-size:13px;color:#324051;text-decoration:none;background:#fff
-    }
-    footer{border-top:1px solid var(--line);padding:18px 0;color:#475569}
-  </style>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
 
@@ -143,6 +91,20 @@ layout: null
       · <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
     </div>
   </footer>
-
+  <script>
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const stored = localStorage.getItem('theme');
+      const prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = stored || prefers;
+      document.body.classList.add(theme);
+      toggle.addEventListener('click', function() {
+        const next = document.body.classList.contains('dark') ? 'light' : 'dark';
+        document.body.classList.remove('light', 'dark');
+        document.body.classList.add(next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
