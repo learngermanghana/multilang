@@ -24,5 +24,5 @@ permalink: /search/
 .search-results{list-style:none;padding-left:0;margin-top:12px}
 .search-results li{padding:8px 0;border-bottom:1px solid #e2e8f0}
 .search-results a{font-weight:700}
-.search-results span{color:#64748b;margin-left:6px}
-</style>
+  .search-results span{color:#334155;margin-left:6px}
+  </style>

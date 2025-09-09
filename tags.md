@@ -10,11 +10,11 @@ permalink: /tags/
 {% endfor %}
 </ul>
 <hr/>
-{% for tag in t %}
-  <h3 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d, %Y" }}</li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+  {% for tag in t %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <ul>
+      {% for post in tag[1] %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d, %Y" }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
