@@ -11,67 +11,7 @@ layout: null
   {%- comment -%} Minima head + your custom head {%- endcomment -%}
   {%- include head.html -%}
   {%- include head-custom.html -%}
-  <style>
-    :root{
-      --brand:#25317e;
-      --bg:#f3f7fb;
-      --ink:#1c2440;
-      --muted:#334155;
-      --card:#ffffff;
-      --ring:rgba(37,49,126,.18);
-      --line:rgba(148,163,184,.35);
-    }
-    html,body{margin:0;padding:0;background:#fff;color:#0b1022;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
-    .hero{
-      background: linear-gradient(180deg, var(--bg), rgba(243,247,251,0));
-      border-top: 6px solid var(--brand);
-      padding: 44px 0 22px;
-    }
-    .hero h1{margin:0 0 10px 0;font-size: clamp(28px, 4vw, 44px);line-height:1.1;color:var(--ink);font-weight:900}
-    .hero p{margin:0 0 16px 0;color:var(--muted);font-size: clamp(16px, 2vw, 18px)}
-    .cta{
-      display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
-      padding:12px 16px;border-radius:12px;font-weight:800;border:1px solid rgba(37,49,126,.9);
-      box-shadow:0 10px 22px var(--ring);
-    }
-    .cta:hover{filter:brightness(1.05)}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 8px}
-    .feature{
-      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px;
-      box-shadow:0 6px 14px rgba(2,6,23,.06)
-    }
-    .feature h3{margin:0 0 6px 0; font-size:18px; color:var(--ink)}
-    .feature p{margin:0;color:var(--muted);font-size:15px}
-    .section{padding: 10px 0 28px}
-    .section h2{margin:8px 0 10px 0;color:var(--ink);font-size:24px}
-    .grid{
-      display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-      gap:14px;align-items:stretch
-    }
-    .card{
-      background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;
-      box-shadow:0 6px 14px rgba(2,6,23,.06);display:flex;flex-direction:column;gap:8px
-    }
-    .card a{color:inherit;text-decoration:none}
-    .card h3{margin:0;color:var(--ink);font-size:18px}
-    .card p{margin:0;color:var(--muted);font-size:15px}
-    .post-card-img{width:100%;height:auto;border-radius:12px;margin-bottom:8px;display:block}
-    .meta{font-size:13px;color:var(--muted)}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-    .pill{
-      display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;
-      font-size:13px;color:#324051;text-decoration:none;background:#fff
-    }
-    .newsletter{background:var(--bg);border-top:1px solid var(--line);padding:32px 0;text-align:center}
-    .newsletter h2{margin:0 0 12px 0;font-size:24px;color:var(--ink)}
-    .newsletter-form{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-    .newsletter-form input[type=email]{border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:16px}
-    .newsletter-form button{background:var(--brand);color:#fff;border:1px solid rgba(37,49,126,.9);border-radius:8px;padding:10px 16px;font-weight:700}
-    .newsletter-form button:hover{filter:brightness(1.05)}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
-  </style>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
 
