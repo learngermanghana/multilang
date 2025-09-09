@@ -16,7 +16,7 @@ layout: null
       --brand:#25317e;
       --bg:#f3f7fb;
       --ink:#1c2440;
-      --muted:#64748b;
+      --muted:#334155;
       --card:#ffffff;
       --ring:rgba(37,49,126,.18);
       --line:rgba(148,163,184,.35);
@@ -57,7 +57,7 @@ layout: null
     .card h3{margin:0;color:var(--ink);font-size:18px}
     .card p{margin:0;color:var(--muted);font-size:15px}
     .post-card-img{width:100%;height:auto;border-radius:12px;margin-bottom:8px;display:block}
-    .meta{font-size:13px;color:#8a97ab}
+    .meta{font-size:13px;color:var(--muted)}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
     .pill{
       display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;
@@ -70,7 +70,7 @@ layout: null
     .newsletter-form button{background:var(--brand);color:#fff;border:1px solid rgba(37,49,126,.9);border-radius:8px;padding:10px 16px;font-weight:700}
     .newsletter-form button:hover{filter:brightness(1.05)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    footer{border-top:1px solid var(--line);padding:18px 0;color:#475569}
+    footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -89,6 +89,7 @@ layout: null
 
   <!-- Feature highlights -->
   <section class="wrap section">
+    <h2>Highlights</h2>
     <div class="features">
       <div class="feature">
         <h3>Exam-focused</h3>
