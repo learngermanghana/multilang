@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Welcome to the Falowen Blog"
-date: 2025-09-09
+date: 2024-09-09
+published: true
 tags: [falowen, german, learning]
 ---
 
