@@ -62,4 +62,5 @@ h1{font-weight:900;line-height:1.1}
 .topnav a{color:var(--brand);text-decoration:none;font-weight:700}
 .topnav a:hover{text-decoration:underline}
 #theme-toggle{background:none;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--ink);cursor:pointer}
+@media (max-width:600px){.topnav{flex-direction:column;align-items:flex-start;gap:8px}}
 footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
