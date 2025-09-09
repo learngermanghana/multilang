@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
 $color-brand: #25317e;
 $color-background: #f3f7fb;
 $color-ink: #1c2440;
@@ -10,7 +12,7 @@ $color-ring: rgba(37,49,126,0.18);
 $color-line: rgba(148,163,184,0.35);
 
 $spacing-unit: 8px;
-$font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+$font-family-base: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
 :root {
   --brand: #{$color-brand};
@@ -26,9 +28,22 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #0b1022;
+  background: var(--bg);
+  color: var(--ink);
   font-family: $font-family-base;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-base;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 .wrap {
