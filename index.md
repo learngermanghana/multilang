@@ -62,6 +62,13 @@ layout: null
       display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;
       font-size:13px;color:#324051;text-decoration:none;background:#fff
     }
+    .newsletter{background:var(--bg);border-top:1px solid var(--line);padding:32px 0;text-align:center}
+    .newsletter h2{margin:0 0 12px 0;font-size:24px;color:var(--ink)}
+    .newsletter-form{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .newsletter-form input[type=email]{border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:16px}
+    .newsletter-form button{background:var(--brand);color:#fff;border:1px solid rgba(37,49,126,.9);border-radius:8px;padding:10px 16px;font-weight:700}
+    .newsletter-form button:hover{filter:brightness(1.05)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     footer{border-top:1px solid var(--line);padding:18px 0;color:#475569}
   </style>
 </head>
@@ -131,6 +138,8 @@ layout: null
       {% endif %}
     </nav>
   </section>
+
+  {% include newsletter.html %}
 
   <footer>
     <div class="wrap">
