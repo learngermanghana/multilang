@@ -63,24 +63,12 @@ layout: null
       font-size:13px;color:#324051;text-decoration:none;background:#fff
     }
     footer{border-top:1px solid var(--line);padding:18px 0;color:#475569}
-    .topnav{display:flex;gap:14px;align-items:center;justify-content:flex-end;padding:10px 0}
-    .topnav a{color:var(--brand);text-decoration:none;font-weight:700}
-    .topnav a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
 
   <!-- Top nav (optional quick links) -->
-  <div class="wrap">
-    <nav class="topnav">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/search/' | relative_url }}">Search</a>
-      <a href="{{ '/categories/' | relative_url }}">Categories</a>
-      <a href="{{ '/tags/' | relative_url }}">Tags</a>
-      <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
-    </nav>
-  </div>
+  {% include topnav.html %}
 
   <!-- Hero -->
   <header class="hero">
