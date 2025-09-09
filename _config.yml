@@ -12,5 +12,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
+paginate: 10
 twitter_username: falowen
 github_username: falowen
