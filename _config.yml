@@ -5,5 +5,11 @@ url: "https://blog.falowen.app" # your custom domain
 theme: minima
 header_pages:
   - about.md
+  - search.md
+  - categories.md
+  - tags.md
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+twitter_username: falowen
+github_username: falowen
