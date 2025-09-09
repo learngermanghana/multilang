@@ -78,6 +78,7 @@ layout: null
       <a href="{{ '/search/' | relative_url }}">Search</a>
       <a href="{{ '/categories/' | relative_url }}">Categories</a>
       <a href="{{ '/tags/' | relative_url }}">Tags</a>
+      <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
     </nav>
   </div>
 
