@@ -14,7 +14,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 paginate: 10
-twitter_username: falowen
+# twitter_username: falowen
 github_username: falowen
 
 giscus:
