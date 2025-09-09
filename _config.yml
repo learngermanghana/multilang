@@ -16,3 +16,11 @@ plugins:
 paginate: 10
 twitter_username: falowen
 github_username: falowen
+
+giscus:
+  repo: "owner/repo"
+  repo_id: "YOUR_REPO_ID"
+  category: "General"
+  category_id: "YOUR_CATEGORY_ID"
+  theme: light
+  lang: en
