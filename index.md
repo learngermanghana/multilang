@@ -101,7 +101,7 @@ layout: null
   <section class="wrap section">
     <h2>Latest articles</h2>
     <div class="grid">
-      {% for post in site.posts limit:12 %}
+      {% for post in paginator.posts %}
       <article class="card">
         <a href="{{ post.url | relative_url }}">
           <h3>{{ post.title }}</h3>
@@ -122,6 +122,14 @@ layout: null
       </article>
       {% endfor %}
     </div>
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        <a class="newer" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer Posts</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a class="older" href="{{ paginator.next_page_path | relative_url }}">Older Posts &raquo;</a>
+      {% endif %}
+    </nav>
   </section>
 
   <footer>
