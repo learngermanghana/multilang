@@ -1,36 +1,104 @@
 ---
 ---
-{% comment %} Home layout: hero + grid cards {% endcomment %}
-{% include head.html %}
-{% include head-custom.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Falowen Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {%- comment -%} Minima head + your custom head {%- endcomment -%}
+  {%- include head.html -%}
+  {%- include head-custom.html -%}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
 
-<div class="hero">
-  <div class="hero-inner">
-    <h1>Falowen Blog</h1>
-    <p>Your German conversation partner online. Tips, exam prep, and product updates from Learn Language Education Academy.</p>
-    <a class="btn" href="/about/">About the project</a>
-  </div>
-</div>
+  {% include header.html %}
 
-<div class="post-grid">
-  {% for post in paginator.posts %}
-    {% include post-card.html post=post %}
-  {% endfor %}
-</div>
-<nav class="pagination">
-  {% if paginator.previous_page %}
-    <a class="newer" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer Posts</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="older" href="{{ paginator.next_page_path | relative_url }}">Older Posts &raquo;</a>
-  {% endif %}
-</nav>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>Falowen Blog</h1>
+      <p>Your German conversation partner online, with tips for A1–C1, exam prep guidance, vocabulary strategies, and product updates from Learn Language Education Academy.</p>
+      <a class="cta" href="https://falowen.app" target="_blank" rel="noopener">Try Falowen</a>
+    </div>
+  </header>
 
-<style>
-.hero{background:linear-gradient(180deg,#f3f7fb,rgba(243,247,251,0));
-      border-top:6px solid #25317e; padding:36px 0 10px; margin:-10px 0 10px;}
-.hero-inner{max-width:960px;margin:0 auto;padding:0 16px;text-align:center}
-.hero h1{margin:0 0 8px 0;font-weight:900;color:#1c2440}
-  .hero p{color:#334155;max-width:720px;margin:0 auto 12px}
-  .post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:12px}
-  </style>
+  <!-- Feature highlights -->
+  <section class="wrap section">
+    <h2>Highlights</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Exam-focused</h3>
+        <p>Practical guidance aligned to Goethe A1–C1 tasks.</p>
+      </div>
+      <div class="feature">
+        <h3>Vocabulary that sticks</h3>
+        <p>Short examples and routines that build habits.</p>
+      </div>
+      <div class="feature">
+        <h3>Teacher + App</h3>
+        <p>Assignments, feedback, and daily practice in one place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest posts grid -->
+  <section class="wrap section">
+    <h2>Latest articles</h2>
+    <div class="grid">
+      {% for post in paginator.posts %}
+      <article class="card">
+        <a href="{{ post.url | relative_url }}">
+          {% if post.image %}
+          <img class="post-card-img" src="{{ post.image }}" alt="{{ post.title }}" />
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          {% endif %}
+        </a>
+        <div class="meta">
+          {{ post.date | date: "%b %d, %Y" }}
+          {% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}
+        </div>
+        <div class="actions">
+          <a class="pill" href="{{ post.url | relative_url }}">Read</a>
+          {% if post.categories and post.categories.size > 0 %}
+            <a class="pill" href="{{ '/categories/#' | append: post.categories[0] | slugify | relative_url }}">{{ post.categories[0] }}</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        <a class="newer" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer Posts</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a class="older" href="{{ paginator.next_page_path | relative_url }}">Older Posts &raquo;</a>
+      {% endif %}
+    </nav>
+  </section>
+
+  {% include newsletter.html %}
+
+  {% include footer.html %}
+
+  <script>
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const stored = localStorage.getItem('theme');
+      const prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = stored || prefers;
+      document.body.classList.add(theme);
+      toggle.addEventListener('click', function() {
+        const next = document.body.classList.contains('dark') ? 'light' : 'dark';
+        document.body.classList.remove('light', 'dark');
+        document.body.classList.add(next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
+</body>
+</html>
