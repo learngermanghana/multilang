@@ -58,8 +58,4 @@ h1{font-weight:900;line-height:1.1}
 .meta{font-size:13px;color:var(--muted)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
 .pill{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--ink);text-decoration:none;background:var(--card)}
-.topnav{display:flex;gap:14px;align-items:center;justify-content:flex-end;padding:10px 0}
-.topnav a{color:var(--brand);text-decoration:none;font-weight:700}
-.topnav a:hover{text-decoration:underline}
-#theme-toggle{background:none;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--ink);cursor:pointer}
 footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
