@@ -11,5 +11,6 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 twitter_username: falowen
 github_username: falowen
