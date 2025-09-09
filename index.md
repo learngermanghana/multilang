@@ -56,6 +56,7 @@ layout: null
     .card a{color:inherit;text-decoration:none}
     .card h3{margin:0;color:var(--ink);font-size:18px}
     .card p{margin:0;color:var(--muted);font-size:15px}
+    .post-card-img{width:100%;height:auto;border-radius:12px;margin-bottom:8px;display:block}
     .meta{font-size:13px;color:#8a97ab}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
     .pill{
@@ -111,6 +112,9 @@ layout: null
       {% for post in paginator.posts %}
       <article class="card">
         <a href="{{ post.url | relative_url }}">
+          {% if post.image %}
+          <img class="post-card-img" src="{{ post.image }}" alt="{{ post.title }}" />
+          {% endif %}
           <h3>{{ post.title }}</h3>
           {% if post.excerpt %}
           <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
