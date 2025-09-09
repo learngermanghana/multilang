@@ -97,6 +97,20 @@ layout: null
       · <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
     </div>
   </footer>
-
+  <script>
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const stored = localStorage.getItem('theme');
+      const prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = stored || prefers;
+      document.body.classList.add(theme);
+      toggle.addEventListener('click', function() {
+        const next = document.body.classList.contains('dark') ? 'light' : 'dark';
+        document.body.classList.remove('light', 'dark');
+        document.body.classList.add(next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
