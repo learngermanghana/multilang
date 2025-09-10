@@ -106,6 +106,22 @@ h1 {
   border-radius: 14px;
   padding: 14px 16px;
   box-shadow: 0 6px 14px rgba(2,6,23,.06);
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+}
+
+.feature.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.feature.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(2,6,23,.1);
 }
 
 .feature h3 {
