@@ -39,12 +39,15 @@ h6{font-size:.875rem;font-weight:500}
 .meta{font-size:13px;color:var(--muted)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
 .pill{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--ink);text-decoration:none;background:var(--card)}
-.topnav{padding:10px 0}
-.topnav-list{display:flex;gap:14px;align-items:center;justify-content:flex-end;list-style:none;margin:0;padding:0}
+.site-header{background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 2px 4px rgba(2,6,23,.06)}
+.topnav-container{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.topnav-logo a{color:var(--brand);text-decoration:none;font-weight:700;font-size:1.25rem;transition:color .2s}
+.topnav-logo a:hover,.topnav-logo a:focus-visible{color:#192257}
+.topnav-list{display:flex;flex-direction:row;align-items:center;gap:14px;list-style:none;margin:0;padding:0}
 .topnav-list li{margin:0}
 .topnav-list a{color:var(--brand);text-decoration:none;font-weight:700;padding:6px 8px;border-radius:6px;transition:background .2s,color .2s}
-.topnav-list a:hover,.topnav-list a:focus-visible{background:var(--brand);color:#fff}
-.topnav-list li.active a{background:var(--brand);color:#fff}
+.topnav-list a:hover,.topnav-list a:focus-visible{background:#3140a5;color:#fff}
+.topnav-list li.active a{background:#25317e;color:#fff}
 .post-nav{display:flex;justify-content:space-between;margin:16px 0}
 .post-nav a{color:var(--brand);text-decoration:none;font-weight:700}
 .post-nav a:hover{text-decoration:underline}
