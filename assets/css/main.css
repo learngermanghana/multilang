@@ -19,7 +19,10 @@ h1{font-weight:900;line-height:1.1}
 .cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 16px;border-radius:12px;font-weight:800;border:1px solid rgba(37,49,126,.9);box-shadow:0 10px 22px var(--ring)}
 .cta:hover{filter:brightness(1.05)}
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 8px}
-.feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 6px 14px rgba(2,6,23,.06)}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 6px 14px rgba(2,6,23,.06);transition:transform .2s,box-shadow .2s,opacity .3s}
+.feature.reveal{opacity:0;transform:translateY(10px)}
+.feature.reveal.in-view{opacity:1;transform:translateY(0)}
+.feature:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(2,6,23,.1)}
 .feature h3{margin:0 0 6px 0;font-size:18px;color:var(--ink)}
 .feature p{margin:0;color:var(--muted);font-size:15px}
 .feature img{width:32px;margin-bottom:8px}
