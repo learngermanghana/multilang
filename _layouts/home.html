@@ -23,6 +23,25 @@
     </div>
   </header>
 
+  <!-- Audience tabs -->
+  <section class="wrap section">
+    <h2>For learners and teachers</h2>
+    <div class="tabs">
+      <ul class="tab-links">
+        <li class="active"><a href="#learners">Learners</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="learners" class="tab active">
+          <p>Explore interactive lessons, vocabulary practice, and exam preparation resources tailored for students.</p>
+        </div>
+        <div id="teachers" class="tab">
+          <p>Access teaching guides, assignment tracking, and tools to support your classroom instruction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Feature highlights -->
   <section class="wrap section">
     <h2>Highlights</h2>
@@ -104,7 +123,8 @@
     </div>
   </section>
 
-  <script type="module" src="{{ '/assets/js/reviews.js' | relative_url }}"></script>
   {% include footer.html %}
+  <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+  <script type="module" src="{{ '/assets/js/reviews.js' | relative_url }}"></script>
   </body>
   </html>
