@@ -253,3 +253,47 @@ footer {
   color: var(--muted);
 }
 
+#testimonials .reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: $spacing-unit * 1.5;
+}
+
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 14px rgba(2,6,23,.06);
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+.review-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.review-card .stars {
+  color: #eab308;
+  margin-bottom: $spacing-unit;
+  font-size: 14px;
+}
+
+.review-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
