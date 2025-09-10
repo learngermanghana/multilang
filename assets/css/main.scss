@@ -469,6 +469,15 @@ footer {
   display: block;
 }
 
+.post-img {
+  max-width: 560px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;
+  border-radius: 12px;
+}
+
 /* Search page styles */
 #search-input {
   width: 100%;
