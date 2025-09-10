@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Blogs
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/blogs/page:num/'
 ---
 
 <ul>
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <small>— {{ post.date | date: "%Y-%m-%d" }}</small>
