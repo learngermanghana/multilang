@@ -530,3 +530,25 @@ footer {
   opacity: .9;
 }
 
+/* Tabs */
+.fx-tabs {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.fx-tabs__list {
+  padding: 8px;
+  gap: 8px;
+}
+
+.fx-tab {
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color .15s ease, color .15s ease;
+
+  &:hover {
+    background-color: rgba(var(--brand), .1);
+  }
+}
+
