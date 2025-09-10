@@ -30,7 +30,7 @@
   <section class="wrap section">
     <h2>Latest articles</h2>
     <div class="latest">
-      {% for post in site.posts | slice: 0, 3 %}
+      {% for post in site.posts limit: 3 %}
       <article class="card">
         <a href="{{ post.url | relative_url }}">
           {% if post.image %}
