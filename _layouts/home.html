@@ -1,110 +1,87 @@
----
----
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Falowen Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {%- comment -%} Minima head + your custom head {%- endcomment -%}
-  {%- include head.html -%}
-  {%- include head-custom.html -%}
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
-  {% include header.html %}
+<!-- Feature highlights (with tabs) -->
+<section class="wrap section">
+  <h2>Highlights</h2>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="wrap">
-      <h1>Falowen Blog</h1>
-      <p>Course books, assignments, results and resources, exam mode, custom chat, vocab and Schreiben trainers—all in one place.</p>
-      <a class="cta" href="https://falowen.app" target="_blank" rel="noopener">Try Falowen <span class="cta-icon">→</span></a>
+  <div class="fx-tabs" data-tabs>
+    <div class="fx-tabs__list" role="tablist" aria-label="Highlights selector">
+      <button class="fx-tab is-active" role="tab" aria-selected="true"
+              id="tab-learners" aria-controls="panel-learners">
+        Learners
+      </button>
+      <button class="fx-tab" role="tab" aria-selected="false"
+              id="tab-teachers" aria-controls="panel-teachers">
+        Teachers
+      </button>
+      <!-- sliding highlight -->
+      <span class="fx-tab__indicator" aria-hidden="true"></span>
     </div>
-  </header>
 
-  <!-- Feature highlights -->
-  <section class="wrap section">
-    <h2>Highlights</h2>
-    <div class="features">
-      <div class="feature">
-        <img src="{{ '/assets/img/exam.svg' | relative_url }}" alt="Exam icon">
-        <div>
-          <h3>Exam-focused</h3>
-          <p>Practical guidance aligned to Goethe A1–C1 tasks.</p>
+    <!-- PANEL 1: Learners (your existing features moved here) -->
+    <div id="panel-learners" class="fx-tab-panel" role="tabpanel" aria-labelledby="tab-learners">
+      <div class="features">
+        <div class="feature">
+          <img src="{{ '/assets/img/exam.svg' | relative_url }}" alt="Exam icon">
+          <div>
+            <h3>Exam-focused</h3>
+            <p>Practical guidance aligned to Goethe A1–C1 tasks.</p>
+          </div>
         </div>
-      </div>
-      <div class="feature">
-        <img src="{{ '/assets/img/vocab.svg' | relative_url }}" alt="Vocabulary icon">
-        <div>
-          <h3>Vocabulary that sticks</h3>
-          <p>Short examples and routines that build habits.</p>
+        <div class="feature">
+          <img src="{{ '/assets/img/vocab.svg' | relative_url }}" alt="Vocabulary icon">
+          <div>
+            <h3>Vocabulary that sticks</h3>
+            <p>Short examples and routines that build habits.</p>
+          </div>
         </div>
-      </div>
-      <div class="feature">
-        <img src="{{ '/assets/img/teacher.svg' | relative_url }}" alt="Teacher and app icon">
-        <div>
-          <h3>Teacher + App</h3>
-          <p>Assignments, feedback, and daily practice in one place.</p>
+        <div class="feature">
+          <img src="{{ '/assets/img/teacher.svg' | relative_url }}" alt="Teacher and app icon">
+          <div>
+            <h3>Teacher + App</h3>
+            <p>Assignments, feedback, and daily practice in one place.</p>
+          </div>
         </div>
-      </div>
-      <a class="feature" href="/course-book/">
-        <img src="{{ '/assets/img/exam.svg' | relative_url }}" alt="Course book icon">
-        <div>
-          <h3>Course book</h3>
-          <p>Interactive course material to guide your study.</p>
-        </div>
-      </a>
-      <a class="feature" href="/results/">
-        <img src="{{ '/assets/img/teacher.svg' | relative_url }}" alt="Results icon">
-        <div>
-          <h3>Results &amp; feedback</h3>
-          <p>Track your progress and review assignments.</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="wrap section">
-    <h2>What students say</h2>
-    <div class="reviews-container">
-      <p>Loading testimonials...</p>
-    </div>
-    <noscript>Please enable JavaScript to view testimonials.</noscript>
-  </section>
-
-  <!-- Latest posts grid -->
-  <section class="wrap section">
-    <h2>Latest articles</h2>
-    <div class="latest">
-      {% for post in site.posts | slice: 0, 3 %}
-      <article class="card">
-        <a href="{{ post.url | relative_url }}">
-          {% if post.image %}
-          <img class="post-card-img" src="{{ post.image }}" alt="{{ post.title }}" />
-          {% endif %}
-          <h3>{{ post.title }}</h3>
-          {% if post.excerpt %}
-          <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-          {% endif %}
+        <a class="feature" href="/course-book/">
+          <img src="{{ '/assets/img/exam.svg' | relative_url }}" alt="Course book icon">
+          <div>
+            <h3>Course book</h3>
+            <p>Interactive course material to guide your study.</p>
+          </div>
         </a>
-        <div class="meta">
-          {{ post.date | date: "%b %d, %Y" }}
-          {% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}
-        </div>
-        <div class="actions">
-          <a class="pill" href="{{ post.url | relative_url }}">Read</a>
-          {% if post.categories and post.categories.size > 0 %}
-            <a class="pill" href="{{ '/categories/#' | append: post.categories[0] | slugify | relative_url }}">{{ post.categories[0] }}</a>
-          {% endif %}
-        </div>
-      </article>
-      {% endfor %}
+        <a class="feature" href="/results/">
+          <img src="{{ '/assets/img/teacher.svg' | relative_url }}" alt="Results icon">
+          <div>
+            <h3>Results &amp; feedback</h3>
+            <p>Track your progress and review assignments.</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </section>
 
-  <script type="module" src="{{ '/assets/js/reviews.js' | relative_url }}"></script>
-  {% include footer.html %}
-  </body>
-  </html>
+    <!-- PANEL 2: Teachers (sample content; edit as you like) -->
+    <div id="panel-teachers" class="fx-tab-panel" role="tabpanel" aria-labelledby="tab-teachers" hidden>
+      <div class="features">
+        <a class="feature" href="/register/">
+          <img src="{{ '/assets/img/teacher.svg' | relative_url }}" alt="Register icon">
+          <div>
+            <h3>Class registration</h3>
+            <p>Collect student details and place them in the right group.</p>
+          </div>
+        </a>
+        <a class="feature" href="/results/">
+          <img src="{{ '/assets/img/exam.svg' | relative_url }}" alt="Results dashboard">
+          <div>
+            <h3>Results dashboard</h3>
+            <p>See scores, trends, and export reports.</p>
+          </div>
+        </a>
+        <a class="feature" href="/tags/#worksheets">
+          <img src="{{ '/assets/img/vocab.svg' | relative_url }}" alt="Worksheets">
+          <div>
+            <h3>Printable worksheets</h3>
+            <p>Quick drills for A1–B2 homework and classwork.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
