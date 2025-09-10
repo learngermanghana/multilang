@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +9,7 @@
     {% include head-custom.html %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
-  <body class="light">
+  <body>
     {% include header.html %}
     <main class="page-content">
       <div class="wrap">
@@ -17,5 +17,6 @@
       </div>
     </main>
     {% include footer.html %}
+    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
   </body>
 </html>

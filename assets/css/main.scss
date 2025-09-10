@@ -11,6 +11,14 @@ $color-card: #ffffff;
 $color-ring: rgba(37,49,126,0.18);
 $color-line: rgba(148,163,184,0.35);
 
+// Dark theme palette
+$color-background-dark: #1c2440;
+$color-ink-dark: #f3f7fb;
+$color-muted-dark: #cbd5e1;
+$color-card-dark: #334155;
+$color-ring-dark: rgba(37,49,126,0.5);
+$color-line-dark: rgba(148,163,184,0.2);
+
 $spacing-unit: 8px;
 $font-family-base: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-family-heading: 'Poppins', $font-family-base;
@@ -23,6 +31,16 @@ $font-family-heading: 'Poppins', $font-family-base;
   --card: #{$color-card};
   --ring: #{$color-ring};
   --line: #{$color-line};
+}
+
+[data-theme='dark'] {
+  --brand: #{$color-brand};
+  --bg: #{$color-background-dark};
+  --ink: #{$color-ink-dark};
+  --muted: #{$color-muted-dark};
+  --card: #{$color-card-dark};
+  --ring: #{$color-ring-dark};
+  --line: #{$color-line-dark};
 }
 
 html,
@@ -253,6 +271,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
+  position: relative;
 }
 
 .topnav-logo a {
@@ -266,6 +285,15 @@ h6 {
 .topnav-logo a:hover,
 .topnav-logo a:focus-visible {
   color: darken($color-brand, 10%);
+}
+
+.topnav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--brand);
+  cursor: pointer;
 }
 
 .topnav-list {
@@ -282,17 +310,23 @@ h6 {
   margin: 0;
 }
 
-.topnav-list a {
+.topnav-list a,
+.topnav-list button {
   color: var(--brand);
   text-decoration: none;
   font-weight: 700;
   padding: 6px 8px;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .topnav-list a:hover,
-.topnav-list a:focus-visible {
+.topnav-list a:focus-visible,
+.topnav-list button:hover,
+.topnav-list button:focus-visible {
   background: lighten($color-brand, 10%);
   color: #fff;
 }
@@ -300,6 +334,29 @@ h6 {
 .topnav-list li.active a {
   background: $color-brand;
   color: #fff;
+}
+
+@media (max-width: 640px) {
+  .topnav-toggle {
+    display: block;
+  }
+
+  .topnav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 8px 0;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .topnav-list.open {
+    display: flex;
+  }
 }
 
 .post-nav {
