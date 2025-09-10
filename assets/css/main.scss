@@ -104,19 +104,29 @@ h6 {
 }
 
 .cta {
-  display: inline-block;
-  background: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, lighten($color-brand, 10%), $color-brand);
   color: #fff;
   text-decoration: none;
   padding: 12px 16px;
   border-radius: 12px;
   font-weight: 800;
-  border: 1px solid rgba(37,49,126,.9);
-  box-shadow: 0 10px 22px var(--ring);
+  border: 1px solid rgba(37,49,126, .9);
+  box-shadow: 0 4px 14px rgba(37,49,126, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta:hover {
-  filter: brightness(1.05);
+  background: linear-gradient(135deg, lighten($color-brand, 15%), $color-brand);
+  box-shadow: 0 6px 18px rgba(37,49,126, 0.35);
+}
+
+.cta-icon {
+  margin-left: $spacing-unit;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.25em;
 }
 
 .features {
