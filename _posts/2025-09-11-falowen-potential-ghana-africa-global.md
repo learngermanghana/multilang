@@ -5,7 +5,7 @@ date: 2025-09-09
 tags: [falowen, german, africa, education, global, goethe-a1, goethe-a2]
 categories: [Vision]
 excerpt: "Born in Awoshie, Accra in 2023 and launched in 2025, Falowen builds on 500+ student exam passes with a hybrid model, AI support, and a course tested in real classrooms so anyone can learn from anywhere."
-image: https://i.imgur.com/7uJRrbr.png
+image: https://i.imgur.com/peGxlkO.png
 ---
 
 <style>
@@ -30,7 +30,8 @@ image: https://i.imgur.com/7uJRrbr.png
 }
 </style>
 
-<img src="https://i.imgur.com/7uJRrbr.png" alt="Falowen app enabling German exam prep from Ghana to a global audience" class="post-img">
+<!-- TOP IMAGE -->
+<img src="https://i.imgur.com/peGxlkO.png" alt="Falowen vision and growth from Ghana to a global audience" class="post-img">
 
 <div class="stats">
   <div class="stat-card">
@@ -55,6 +56,9 @@ Across our programs, we now celebrate more than five hundred student exam passes
 ## Why Ghana Matters
 
 Ghana is a hub of education and mobility in West Africa. Many learners aim to study, work, or reunite with family abroad, goals that require proven language skills. Falowen ties daily practice to real exam success and everyday communication.
+
+<!-- MIDDLE IMAGE -->
+<img src="https://i.imgur.com/7uJRrbr.png" alt="Falowen app enabling German exam prep from Ghana to the world" class="post-img">
 
 <hr/>
 
