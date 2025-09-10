@@ -1,11 +1,27 @@
 <div class="wrap">
   <nav class="topnav">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-    <a href="{{ '/search/' | relative_url }}">Search</a>
-    <a href="{{ '/categories/' | relative_url }}">Categories</a>
-    <a href="{{ '/tags/' | relative_url }}">Tags</a>
-    <a href="{{ '/blogs/' | relative_url }}">Blogs</a>
-    <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
+    <ul class="topnav-list">
+      <li class="{% if page.url == '/' %}active{% endif %}">
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      <li class="{% if page.url == '/about/' %}active{% endif %}">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </li>
+      <li class="{% if page.url == '/search/' %}active{% endif %}">
+        <a href="{{ '/search/' | relative_url }}">Search</a>
+      </li>
+      <li class="{% if page.url == '/categories/' %}active{% endif %}">
+        <a href="{{ '/categories/' | relative_url }}">Categories</a>
+      </li>
+      <li class="{% if page.url == '/tags/' %}active{% endif %}">
+        <a href="{{ '/tags/' | relative_url }}">Tags</a>
+      </li>
+      <li class="{% if page.url == '/blogs/' %}active{% endif %}">
+        <a href="{{ '/blogs/' | relative_url }}">Blogs</a>
+      </li>
+      <li>
+        <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
+      </li>
+    </ul>
   </nav>
 </div>
