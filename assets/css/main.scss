@@ -469,3 +469,36 @@ footer {
   display: block;
 }
 
+/* Search page styles */
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+#search-input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.search-results {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.search-results li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.search-results a {
+  font-weight: 700;
+}
+
+.search-results span {
+  color: #334155;
+  margin-left: 6px;
+}
+
