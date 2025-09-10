@@ -1,85 +1,41 @@
 ---
-layout: post
-title: "Falowen: Your German Conversation Partner for Everyday Learning"
-date: 2025-09-09
-tags: [falowen, german, learning, exams, app]
-categories: [Guides]
-excerpt: "Discover how Falowen bridges classroom learning and independent German practice with exam prep, instant feedback, and teacher integration."
-image: https://i.imgur.com/pqXoqSC.png
+layout: default
+title: About
+permalink: /about/
 ---
 
-<style>
-.post-img{
-  max-width:560px;
-  width:100%;
-  height:auto;
-  display:block;
-  margin:0 auto 12px;
-  border-radius:12px;
-}
-.feature-list li, .why-list li{ margin:6px 0 }
-.callout{ border-left:4px solid #e2e8f0; background:#f8fafc; padding:10px 12px; color:#475569; margin:12px 0 }
-.btn{ display:inline-block; background:#25317e; color:#fff; text-decoration:none; padding:10px 14px; border-radius:12px; margin:8px 0 }
-</style>
+# About the Falowen Blog
 
-<img src="https://i.imgur.com/pqXoqSC.png" alt="Falowen app conversation and practice overview" class="post-img">
+<img src="{{ '/assets/about-hero.jpg' | relative_url }}" alt="About Falowen" style="max-width:720px;width:100%;height:auto;border-radius:12px;display:block;margin:0 auto 12px;">
 
-## The Story Behind Falowen
+The **Falowen Blog** is where we share stories, tips, and updates from **Learn Language Education Academy** and the **Falowen app**.  
 
-Falowen was born out of a real classroom need. At Learn Language Education Academy in Accra, Ghana, we saw students preparing for Goethe A1 and A2 who worked hard in class but lacked structured practice tools at home.
-
-We asked a simple question: *What if students could practice speaking, writing, and vocabulary every day on their phone or laptop, and bring that work to class for coaching?*  
-Falowen is the answer — a conversation-focused app that connects daily independent practice to teacher support.
+Our goal is simple:  
+- Help learners prepare for **Goethe exams** (A1–C1) with practical advice  
+- Share **vocabulary, grammar, and speaking strategies** that make daily practice easier  
+- Keep you updated on **new features** and **success stories** from our students  
 
 ---
 
-## What Makes Falowen Different?
+## Who We Are
 
-<ul class="feature-list">
-  <li><strong>Real exam practice</strong>: rehearse introductions, questions, and polite requests in Goethe style tasks.</li>
-  <li><strong>Vocabulary that sticks</strong>: daily sets with examples, not just word lists, so usage becomes natural.</li>
-  <li><strong>Instant feedback</strong>: grammar, structure, and pronunciation checks so every minute counts.</li>
-  <li><strong>Teacher integration</strong>: tutors review your submissions and coach what you have already built.</li>
-</ul>
-
-<img src="https://i.imgur.com/pFQ5BIn.png" alt="Falowen task flow and feedback example" class="post-img">
+Falowen is built by teachers who understand the challenges of learning German.  
+From classrooms in **Accra, Ghana** to learners around the globe, we combine teaching experience with modern technology to make language learning accessible and effective.  
 
 ---
 
-## How Falowen Works Day to Day
+## What You’ll Find Here
 
-<ul class="feature-list">
-  <li><strong>Exams Mode</strong>: practice realistic Goethe tasks to build confidence for the speaking, writing, and interaction parts.</li>
-  <li><strong>Custom Chat</strong>: choose topics and tone for natural conversations that match real life.</li>
-  <li><strong>Minimum daily target</strong>: seven new words per day to keep progress steady and achievable.</li>
-  <li><strong>Sentence Builder</strong>: turn new words into phrases and full sentences so you can use them immediately.</li>
-  <li><strong>Dictionary with audio and downloads</strong>: hear standard pronunciation and save packs for low-data practice.</li>
-  <li><strong>Live stats and weekly overview</strong>: see correct and wrong answers, streaks, and a prompt to continue or restart for deeper mastery.</li>
-</ul>
-
-<div class="callout">
-Falowen is not a replacement for teachers. It ensures you never stop practicing between classes, and it helps tutors focus class time on higher-value coaching.
-</div>
+- **Study Tips and Hacks** → Learn smarter, not harder  
+- **Exam Preparation** → Guidance for Goethe A1–C1  
+- **Vocabulary Routines** → Build daily learning habits  
+- **Falowen Updates** → New features, success stories, and behind the scenes  
 
 ---
 
-## Why Falowen Matters
+## Join the Journey
 
-<ul class="why-list">
-  <li><strong>Built by a teacher for students</strong>: designed around real classroom challenges.</li>
-  <li><strong>Rooted in exam success</strong>: practice maps to Goethe expectations, not generic quizzes.</li>
-  <li><strong>Daily practice made practical</strong>: small, guided sessions that fit busy schedules.</li>
-</ul>
+Language learning is more than exams — it is about confidence, culture, and connection.  
 
----
-
-## The Bigger Vision
-
-Our mission is access, affordability, and effectiveness. Falowen helps learners in Ghana and across Africa practice from anywhere, then brings that work into class for feedback. Over time, we aim to let motivated learners progress even with minimal tutor contact, while keeping a clear path to human coaching when needed.
-
----
-
-## Get Started
-
-<a class="btn" href="https://falowen.app" target="_blank" rel="noopener">Try Falowen</a>  
-Follow us on Facebook, LinkedIn, and Instagram for daily vocabulary and learning tips.
+Visit [falowen.app](https://falowen.app) to try the app.  
+Follow us on **Facebook, LinkedIn, and Instagram** for daily learning tips.
