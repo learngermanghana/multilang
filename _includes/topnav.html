@@ -2,6 +2,7 @@
   <div class="topnav-logo">
     <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </div>
+  <button class="topnav-toggle" aria-expanded="false" aria-label="Menu">&#9776;</button>
   <nav class="topnav" aria-label="Main navigation">
     <ul class="topnav-list">
       <li class="{% if page.url == '/' %}active{% endif %}">
@@ -25,6 +26,22 @@
       <li>
         <a href="https://register.falowen.app" target="_blank" rel="noopener">Register</a>
       </li>
+      <li>
+        <button id="theme-toggle" type="button">Dark Mode</button>
+      </li>
     </ul>
   </nav>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.topnav-toggle');
+    var list = document.querySelector('.topnav-list');
+    if (toggle && list) {
+      toggle.addEventListener('click', function() {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', (!expanded).toString());
+        list.classList.toggle('open');
+      });
+    }
+  });
+</script>
