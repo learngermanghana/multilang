@@ -8,7 +8,7 @@ excerpt: "Speaking partners used to be essential. With Falowen, you can practice
 image: https://i.imgur.com/QoevL0A.jpeg
 ---
 
-<img src="https://i.imgur.com/QoevL0A.jpeg" alt="Falowen speaking practice" style="max-width:560px;width:100%;height:auto;display:block;margin:0 auto 12px;border-radius:12px;">
+<img src="https://i.imgur.com/QoevL0A.jpeg" alt="Falowen speaking practice" class="post-img">
 
 ## The Traditional Way
 

@@ -8,7 +8,7 @@ excerpt: "Small, consistent steps are the secret to mastering German vocabulary.
 image: https://i.imgur.com/2T6e8nX.jpeg
 ---
 
-<img src="https://i.imgur.com/2T6e8nX.jpeg" alt="Falowen Vocabulary Preview" loading="lazy" width="560" height="315" style="max-width:560px;width:100%;height:auto;display:block;margin:0 auto 12px;border-radius:12px;">
+<img src="https://i.imgur.com/2T6e8nX.jpeg" alt="Falowen Vocabulary Preview" loading="lazy" width="560" height="315" class="post-img">
 
 ## Why Daily Vocabulary Matters
 

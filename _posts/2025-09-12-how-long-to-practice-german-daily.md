@@ -8,7 +8,7 @@ excerpt: "Falowen recommends one focused hour a day—or 1 hour for 3 days at A2
 image: https://i.imgur.com/GxUKnUw.jpeg
 ---
 
-<img src="https://i.imgur.com/GxUKnUw.jpeg" alt="Daily German practice with Falowen" style="max-width:560px;width:100%;height:auto;display:block;margin:0 auto 12px;border-radius:12px;">
+<img src="https://i.imgur.com/GxUKnUw.jpeg" alt="Daily German practice with Falowen" class="post-img">
 
 ## The Daily Practice Question
 
