@@ -6,9 +6,14 @@ permalink: /about/
 
 # About the Falowen Blog
 
-<img src="{{ '/assets/about-hero.jpg' | relative_url }}" alt="About Falowen" style="max-width:720px;width:100%;height:auto;border-radius:12px;display:block;margin:0 auto 12px;">
+<style>
+.post-img{max-width:720px;width:100%;height:auto;border-radius:12px;display:block;margin:0 auto 12px}
+</style>
 
-The **Falowen Blog** is where we share stories, tips, and updates from **Learn Language Education Academy** and the **Falowen app**.  
+<img src="https://i.imgur.com/peGxlkO.png" alt="About Falowen" class="post-img">
+
+The **Falowen Blog** is where we share stories, tips, and updates from **Learn Language Education Academy** and the **Falowen app**.
+
 
 Our goal is simple:  
 - Help learners prepare for **Goethe exams** (A1–C1) with practical advice  
