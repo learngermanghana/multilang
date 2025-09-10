@@ -16,10 +16,19 @@ async function fetchReviews() {
       rating: Number(row.c[1]?.v) || 0,
       review_text: row.c[2]?.v || ''
     }));
-    if (reviews.length === 0) {
+
+    // Show a rotating subset of three reviews based on the current day
+    const dailyIndex = Math.floor(Date.now() / 86400000);
+    const start = reviews.length ? dailyIndex % reviews.length : 0;
+    const selected = [];
+    for (let i = 0; i < 3 && i < reviews.length; i++) {
+      selected.push(reviews[(start + i) % reviews.length]);
+    }
+
+    if (selected.length === 0) {
       container.innerHTML = '<p>No testimonials yet.</p>';
     } else {
-      renderReviews(reviews, container);
+      renderReviews(selected, container);
     }
   } catch (err) {
     console.error('Failed to load reviews', err);
