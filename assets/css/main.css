@@ -75,3 +75,12 @@ footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
 .search-results li{padding:8px 0;border-bottom:1px solid #e2e8f0}
 .search-results a{font-weight:700}
 .search-results span{color:#334155;margin-left:6px}
+
+/* Tabs component */
+.tabs{margin-top:16px}
+.tab-links{list-style:none;padding:0;display:flex;border-bottom:2px solid var(--line);margin:0 0 8px 0}
+.tab-links li{margin-right:10px}
+.tab-links a{text-decoration:none;display:block;padding:6px 10px;color:inherit}
+.tab-links li.active a{border-bottom:2px solid var(--brand);font-weight:700}
+.tab-content .tab{display:none}
+.tab-content .tab.active{display:block}
