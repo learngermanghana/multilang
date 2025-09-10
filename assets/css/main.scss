@@ -141,11 +141,9 @@ h1 {
   font-size: 24px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+.latest {
+  display: flex;
   gap: 14px;
-  align-items: stretch;
 }
 
 .card {
@@ -157,6 +155,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: $spacing-unit;
+  flex: 1;
 }
 
 .card a {
