@@ -2,7 +2,12 @@
 <article class="post-card">
   <a class="post-card-link" href="{{ p.url | relative_url }}">
     {% if p.image %}
-    <img class="post-card-img" src="{{ p.image }}" alt="{{ p.title }}" />
+    <img class="post-card-img"
+         src="{{ p.image }}"
+         alt="{{ p.title }}"
+         loading="lazy"
+         width="{{ p.image_width | default: 600 }}"
+         height="{{ p.image_height | default: 400 }}" />
     {% endif %}
     <h3 class="post-card-title">{{ p.title }}</h3>
     {% if p.excerpt %}
