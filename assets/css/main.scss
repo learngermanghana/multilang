@@ -56,3 +56,11 @@
 .fx-tab-panel{ opacity: 0; transition: opacity .2s ease; }
 [role="tabpanel"]:not([hidden]){ opacity: 1; }
 /* ==== /Fancy Tabs ==== */
+
+.post-share {
+  margin-top: 1rem;
+}
+
+.post-share a {
+  margin-right: 0.5rem;
+}
