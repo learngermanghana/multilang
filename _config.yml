@@ -12,9 +12,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-paginate: 10
-paginate_path: "/blogs/page:num/"
 future: true
 # twitter_username: falowen
 github_username: falowen
