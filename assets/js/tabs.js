@@ -1,30 +1,50 @@
-(function() {
-  const tabLists = document.querySelectorAll('[role="tablist"]');
-  tabLists.forEach(list => {
-    const tabs = list.querySelectorAll('[role="tab"]');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const targetId = tab.getAttribute('aria-controls');
-        if (!targetId) return;
+(function () {
+  document.querySelectorAll('[data-tabs]').forEach((wrap) => {
+    const list = wrap.querySelector('.fx-tabs__list');
+    const tabs = [...wrap.querySelectorAll('[role="tab"]')];
+    const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
+    const indicator = wrap.querySelector('.fx-tab__indicator');
 
-        tabs.forEach(t => {
-          t.setAttribute('aria-selected', 'false');
-          const id = t.getAttribute('aria-controls');
-          if (!id) return;
-          const panel = document.getElementById(id);
-          if (!panel) return;
-          panel.setAttribute('hidden', '');
-          panel.classList.remove('fx-tab-panel--active');
-        });
+    function moveIndicator(el){
+      if(!indicator) return;
+      const left = el.offsetLeft - list.scrollLeft + 6; // compensate for list padding
+      indicator.style.transform = `translateX(${left}px)`;
+      indicator.style.width = el.offsetWidth + 'px';
+    }
 
-        tab.setAttribute('aria-selected', 'true');
-        const panel = document.getElementById(targetId);
-        if (!panel) return;
-        panel.removeAttribute('hidden');
-        requestAnimationFrame(() => {
-          panel.classList.add('fx-tab-panel--active');
-        });
+    function setActive(idx){
+      tabs.forEach((t,i)=>{
+        const on = i === idx;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on);
+        t.tabIndex = on ? 0 : -1;
+        panels[i].hidden = !on;
       });
+      moveIndicator(tabs[idx]);
+    }
+
+    // init
+    const start = Math.max(0, tabs.findIndex(t => t.classList.contains('is-active')));
+    setActive(start);
+
+    tabs.forEach((t,i)=> t.addEventListener('click', ()=> setActive(i)));
+
+    // keyboard support
+    list.addEventListener('keydown', (e)=>{
+      const i = tabs.findIndex(t => t.getAttribute('aria-selected') === 'true');
+      if(['ArrowRight','ArrowLeft','Home','End'].includes(e.key)){
+        e.preventDefault();
+        let n = i;
+        if(e.key==='ArrowRight') n = (i+1)%tabs.length;
+        if(e.key==='ArrowLeft')  n = (i-1+tabs.length)%tabs.length;
+        if(e.key==='Home') n = 0;
+        if(e.key==='End')  n = tabs.length-1;
+        tabs[n].focus(); setActive(n);
+      }
     });
+
+    // keep pill aligned
+    window.addEventListener('resize', ()=> moveIndicator(wrap.querySelector('.fx-tab.is-active')));
+    list.addEventListener('scroll', ()=> moveIndicator(wrap.querySelector('.fx-tab.is-active')));
   });
 })();
