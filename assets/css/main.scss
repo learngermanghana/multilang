@@ -511,3 +511,22 @@ footer {
   margin-left: 6px;
 }
 
+.cta {
+  margin: $spacing-unit * 3 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: $spacing-unit * 1.5 $spacing-unit * 3;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  opacity: .9;
+}
+
