@@ -233,21 +233,41 @@ h6 {
 }
 
 .topnav {
+  padding: 10px 0;
+}
+
+.topnav-list {
   display: flex;
   gap: 14px;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.topnav a {
+.topnav-list li {
+  margin: 0;
+}
+
+.topnav-list a {
   color: var(--brand);
   text-decoration: none;
   font-weight: 700;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
-.topnav a:hover {
-  text-decoration: underline;
+.topnav-list a:hover,
+.topnav-list a:focus-visible {
+  background: var(--brand);
+  color: #fff;
+}
+
+.topnav-list li.active a {
+  background: var(--brand);
+  color: #fff;
 }
 
 .post-nav {
