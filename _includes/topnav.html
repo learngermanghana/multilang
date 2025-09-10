@@ -1,5 +1,8 @@
-<div class="wrap">
-  <nav class="topnav">
+<div class="wrap topnav-container">
+  <div class="topnav-logo">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+  <nav class="topnav" aria-label="Main navigation">
     <ul class="topnav-list">
       <li class="{% if page.url == '/' %}active{% endif %}">
         <a href="{{ '/' | relative_url }}">Home</a>
