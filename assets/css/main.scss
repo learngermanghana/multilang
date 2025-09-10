@@ -214,6 +214,22 @@ h1 {
   text-decoration: underline;
 }
 
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing-unit * 2 0;
+}
+
+.post-nav a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
