@@ -22,9 +22,6 @@ image: https://i.imgur.com/hZMlxWK.jpeg
 }
 </style>
 
-<!-- TOP IMAGE -->
-<img src="https://i.imgur.com/hZMlxWK.jpeg" alt="Falowen vision and growth from Ghana to a global audience" class="post-img">
-
 <div class="stats">
   <div class="stat-card">
     <strong>500+ passes</strong><br><small>Goethe A1 to A2 and beyond</small>

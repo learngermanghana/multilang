@@ -14,8 +14,6 @@ image: https://i.imgur.com/pqXoqSC.png
 .btn{ display:inline-block; background:#25317e; color:#fff; text-decoration:none; padding:10px 14px; border-radius:12px; margin:8px 0 }
 </style>
 
-<img src="https://i.imgur.com/pqXoqSC.png" alt="Falowen app conversation and practice overview" class="post-img">
-
 ## The Story Behind Falowen
 
 Falowen was born out of a real classroom need. At Learn Language Education Academy in Accra, Ghana, we saw students preparing for Goethe A1 and A2 who worked hard in class but lacked structured practice tools at home.

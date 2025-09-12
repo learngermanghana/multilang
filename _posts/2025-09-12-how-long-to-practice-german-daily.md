@@ -7,9 +7,6 @@ categories: [Tips]
 excerpt: "Falowen recommends one focused hour a day—or 1 hour for 3 days at A2+—with deep understanding of each task. Here’s how to make every minute count, even when you only have 15–30 minutes."
 image: https://i.imgur.com/GxUKnUw.jpeg
 ---
-
-<img src="https://i.imgur.com/GxUKnUw.jpeg" alt="Daily German practice with Falowen" class="post-img">
-
 ## The Daily Practice Question
 
 “How much time should I spend on German each day?”  
