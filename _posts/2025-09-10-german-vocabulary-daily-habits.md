@@ -9,14 +9,6 @@ image: https://i.imgur.com/2T6e8nX.jpeg
 ---
 
 <style>
-.post-img{
-  max-width:560px;
-  width:100%;
-  height:auto;
-  display:block;
-  margin:0 auto 12px;
-  border-radius:12px;
-}
 .feature-list li{margin:6px 0}
 </style>
 
