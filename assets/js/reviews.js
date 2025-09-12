@@ -3,6 +3,13 @@ const SHEET_GID = '0'; // worksheet gid
 
 const endpoint = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?gid=${SHEET_GID}`;
 
+function toInitials(name = '') {
+  if (!name) return '';
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return '';
+  return parts.map(p => p[0].toUpperCase() + '.').join(' ');
+}
+
 async function fetchReviews() {
   const container = document.querySelector('#testimonials .reviews-container');
   if (!container) return;
@@ -43,7 +50,7 @@ function renderReviews(reviews, container) {
     card.className = 'review-card';
 
     const name = document.createElement('h3');
-    name.textContent = r.student_name;
+    name.textContent = toInitials(r.student_name);
     card.appendChild(name);
 
     const stars = document.createElement('div');
