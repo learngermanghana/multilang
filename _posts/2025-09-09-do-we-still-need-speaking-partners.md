@@ -7,9 +7,6 @@ categories: [Debate]
 excerpt: "Speaking partners used to be essential. With Falowen, you can practice anytime, anywhere, faster than the traditional way."
 image: https://i.imgur.com/QoevL0A.jpeg
 ---
-
-<img src="https://i.imgur.com/QoevL0A.jpeg" alt="Falowen speaking practice" class="post-img">
-
 ## The Traditional Way
 
 For years, language learners were told to find a speaking partner to become fluent.  

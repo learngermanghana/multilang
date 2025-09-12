@@ -14,10 +14,19 @@ layout: default
       {%- endif -%}
     </p>
   </header>
+  {% if page.image %}
+    <img
+      src="{{ page.image }}"
+      alt="{{ page.image_alt | default: page.title }}"
+      width="{{ page.image_width | default: 600 }}"
+      height="{{ page.image_height | default: 400 }}"
+      loading="eager"
+      class="post-img">
+  {% endif %}
 
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
-    </div>
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
     {% include cta.html %}
 
