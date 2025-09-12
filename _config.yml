@@ -11,7 +11,7 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
+  - jekyll-sitemap # generate sitemap.xml
   - jekyll-paginate-v2
 future: true
 # twitter_username: falowen
