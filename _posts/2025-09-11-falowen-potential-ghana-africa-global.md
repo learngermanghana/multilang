@@ -9,14 +9,6 @@ image: https://i.imgur.com/hZMlxWK.jpeg
 ---
 
 <style>
-.post-img{
-  max-width:560px;
-  width:100%;
-  height:auto;
-  display:block;
-  margin:0 auto 12px;
-  border-radius:12px;
-}
 .stats{ display:flex; gap:16px; flex-wrap:wrap; margin:12px 0 8px; }
 .stat-card{
   flex:1; min-width:180px; padding:10px 12px;
