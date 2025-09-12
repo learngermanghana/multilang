@@ -7,85 +7,117 @@ categories: [Tips]
 excerpt: "Falowen recommends one focused hour a day—or 1 hour for 3 days at A2+—with deep understanding of each task. Here’s how to make every minute count, even when you only have 15–30 minutes."
 image: https://i.imgur.com/GxUKnUw.jpeg
 ---
+
 ## The Daily Practice Question
 
 “How much time should I spend on German each day?”  
-The real key isn’t just the total time—it’s **consistency** and **how you use the time**.
+The real key is not just the total time. It is consistency and how you use the time.
 
----
+<hr/>
+
+## Program Snapshot (Falowen Method)
+
+<ul>
+  <li><strong>Class duration</strong>: 1 hour to 1 hour 30 minutes, three days per week. We do not go beyond this.</li>
+  <li><strong>Homework</strong>: 30 to 45 minutes after each class to lock in learning.</li>
+  <li><strong>Daily minimum</strong>: complete one <strong>course-book assignment</strong> and a short <strong>grammar review</strong>. Vocabulary can be added, but it does not replace the core work.</li>
+  <li><strong>Tools</strong>: Exams Mode, Custom Chat, <strong>Pronunciation Checker</strong>, and the <a href="/2025/09/14/schreiben-trainer-from-blank-page-to-confident-writing.html">Schreiben Trainer</a> for scoring and annotations.</li>
+  <li><strong>Progress window</strong>: apply this rhythm for three months and students progress very well.</li>
+</ul>
+
+> Some newcomers worry the time is too small. That is a traditional mindset. With Falowen’s modern tools, the same ninety minutes achieve more because practice is structured and feedback is instant.
+
+<hr/>
+
+## A1: Practical vs. Lecture Time
+
+At A1 we divide the work by skill so that class time matches how beginners learn best.
+
+<ul>
+  <li><strong>Schreiben and Sprechen</strong>: practice based. You speak and write in class with coaching.</li>
+  <li><strong>Lesen and Hören</strong>: lecture based. Your tutor explains concepts so you understand what to look and listen for.</li>
+</ul>
+
+During Sprechen, use the <strong>Pronunciation Checker</strong> to compare your recording with model audio and correct sounds immediately.  
+After class, homework reinforces what you learned: one course-book assignment plus a short grammar review.
+
+<hr/>
+
+## A2 to B2: Modern Class Flow
+
+From A2 upward we keep the same total time but raise intensity with preparation inside the app.
+
+<ul>
+  <li><strong>Before class</strong>: open <em>Custom Chat</em> to prepare the Question of the Day and read one chapter ahead for speaking.</li>
+  <li><strong>In class</strong>: each student gets at least three minutes of uninterrupted speaking, followed by targeted tutor questions. Use the <strong>Pronunciation Checker</strong> to tighten sounds and rhythm.</li>
+  <li><strong>After class</strong>: a <em>Schreiben</em> task plus the remaining homework (thirty to forty-five minutes): course-book assignment and grammar review.</li>
+</ul>
+
+Because you arrive prepared, the hour is used for coaching, not for starting from zero.
+
+<hr/>
 
 ## Falowen’s Recommendation: One Focused Hour
 
-At Falowen, we recommend **1 focused hour** per day. The goal is not to rush, but to **understand each task deeply** within that hour.
+We recommend one focused hour on most days. The goal is not to rush. The goal is to understand each task deeply within that hour.
 
-A simple 60-minute structure:
-- **15 min** — Vocabulary with examples (active recall, not passive reading)  
-- **20 min** — Speaking drills (introductions, questions, polite requests)  
-- **15 min** — Writing (2–3 short task responses)  
-- **10 min** — Feedback review + corrections  
+**A simple sixty-minute structure**
+<ul>
+  <li><strong>15 minutes</strong>: course-book assignment checkpoint and quick grammar review</li>
+  <li><strong>20 minutes</strong>: speaking drills using the <strong>Pronunciation Checker</strong> (introductions, questions, polite requests)</li>
+  <li><strong>15 minutes</strong>: writing practice in the <em>Schreiben Trainer</em> (two or three short task responses)</li>
+  <li><strong>10 minutes</strong>: review feedback and apply corrections</li>
+</ul>
 
-If you can’t do an hour every day, aim for **1 hour on 3 days** and keep **micro-practice** on the others (see plans below).
+If a full hour is not possible every day, do one hour on three days and keep micro practice on the others.
 
----
+<hr/>
 
-## A2+ Fast-Track: 1 Hour × 3 Days
+## If You Only Have 15 to 30 Minutes
 
-From **A2 and upward**, our design helps learners **start speaking quickly** with just **one hour per day for three days**:
-- **Day 1:** Exam-style speaking prompts + key vocab  
-- **Day 2:** Short writing tasks + pronunciation focus  
-- **Day 3:** Mixed simulation (speaking + writing) with targeted corrections
+**15-minute micro plan**
+<ul>
+  <li>6 minutes: course-book task checkpoint</li>
+  <li>6 minutes: one speaking prompt with the <strong>Pronunciation Checker</strong></li>
+  <li>3 minutes: quick corrections</li>
+</ul>
 
-This concentrates effort while keeping it realistic for busy schedules.
+**30-minute balanced plan**
+<ul>
+  <li>10 minutes: grammar review plus a short course-book exercise</li>
+  <li>10 minutes: speaking drill with the <strong>Pronunciation Checker</strong> (record and review)</li>
+  <li>10 minutes: short writing task in the <em>Schreiben Trainer</em></li>
+</ul>
 
----
+Small, daily sessions compound fast.
 
-## Prep-First Model (How Our Classes Work)
+<hr/>
 
-Falowen isn’t “just AI.” Students **prepare ahead** using in-app tools, then tutors **listen, coach, and refine**.  
-This flips the classroom from passive to active:
+## Track Your Progress
 
-**In the app before class**
-- **Exams Mode:** Goethe-style tasks to rehearse realistic scenarios  
-- **Custom Chat Mode:** Topic-based conversations that feel natural  
-- **Instant feedback:** Corrections on grammar, structure, and pronunciation  
-- **Submission tools:** Share responses for tutor review
+Falowen shows live stats and a weekly overview. You see what you got right and wrong, your streaks, and your stars.  
+For writing, the <a href="/2025/09/14/schreiben-trainer-from-blank-page-to-confident-writing.html">Schreiben Trainer</a> gives a rubric score and annotations. Each submission shows pass or not pass, with the current pass mark above 17. You can download a PDF of your work or share it to yourself on WhatsApp.
 
-**In class**
-- Tutors focus on **what you bring**—clarifying, extending, and correcting—  
-  instead of spending the whole hour explaining things you could have practiced in the app.
-
----
-
-## If You Only Have 15–30 Minutes
-
-**15-Minute Micro Plan**
-- 5 min — Active vocab (say + type each item)  
-- 7 min — One speaking prompt  
-- 3 min — Review feedback/corrections
-
-**30-Minute Balanced Plan**
-- 10 min — Vocab with example sentences  
-- 10 min — Speaking drill (record + review)  
-- 10 min — Short writing task (4–6 sentences)
-
-These short sessions compound fast when done **daily**.
-
----
+<hr/>
 
 ## Why This Works
 
-- **Focused practice > long, unfocused sessions**  
-- **Instant feedback** accelerates learning  
-- **Prep-first** ensures class time is personal, not generic
+<ul>
+  <li>Course-book assignments and grammar review build a clear foundation</li>
+  <li>Instant feedback and the <strong>Pronunciation Checker</strong> accelerate learning</li>
+  <li>Prep first makes class time personal, not generic</li>
+</ul>
 
----
+<hr/>
 
 ## Final Thoughts
 
-Choose a plan you can **keep consistently**.  
-- Best: **1 hour/day** with deep understanding  
-- Busy weeks: **1 hour × 3 days** (A2+ sprint) + micro practice on off days  
-- Minimum: **15 minutes daily** beats zero
+Choose a plan you can keep consistently.
 
-Start your routine with Falowen at [falowen.app](https://falowen.app).  
-Your tutor—and your future self—will thank you.
+<ul>
+  <li><strong>Best</strong>: one focused hour per day</li>
+  <li><strong>Busy weeks</strong>: one hour on three days plus micro practice</li>
+  <li><strong>Core habit</strong>: complete one course-book assignment and a short grammar review each day</li>
+</ul>
+
+Start your routine at <a href="https://falowen.app" target="_blank" rel="noopener">falowen.app</a>. Your tutor and your future self will thank you.
