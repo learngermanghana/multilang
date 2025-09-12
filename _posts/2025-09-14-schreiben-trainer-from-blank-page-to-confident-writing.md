@@ -16,8 +16,6 @@ image: https://i.imgur.com/39aYotC.jpeg
 .score .chip{border:1px solid #e2e8f0;border-radius:999px;padding:6px 10px;background:#f8fafc;color:#0f172a}
 </style>
 
-<img src="https://i.imgur.com/39aYotC.jpeg" alt="Falowen Schreiben Trainer on mobile and desktop" class="post-img">
-
 ## Why the Schreiben Trainer matters
 
 Many learners can speak a little yet freeze when the page is empty. The Schreiben Trainer guides you from idea to finished paragraph with structure, examples, and feedback you can act on immediately.
@@ -47,7 +45,7 @@ A second box opens for improvements. When you edit your letter there, the traine
 
 <img src="https://i.imgur.com/ixA5INU.png" alt="Mark My Letter tab with rubric, annotations, and delta view" class="post-img">
 
-### Ideas Generator   (Letter Coach)
+### Ideas Generator (Letter Coach)
 Paste the exam question or assignment instructions. Then work step by step with the Letter Coach to collect ideas, plan your structure, choose the right tone, and turn notes into a clean first draft. This is perfect for preparing a strong submission or warming up before you write inside Practice Letters.
 
 <img src="https://i.imgur.com/0SzrBVr.png" alt="Ideas Generator with step by step letter coaching" class="post-img">
