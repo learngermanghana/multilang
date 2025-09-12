@@ -10,6 +10,13 @@
 
 <link rel="icon" href="https://i.imgur.com/mcrrGfd.png" />
 
+<link
+  rel="feed"
+  type="application/rss+xml"
+  title="{{ site.title }}"
+  href="{{ '/feed.xml' | absolute_url }}"
+>
+
 <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
 <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description | escape }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
